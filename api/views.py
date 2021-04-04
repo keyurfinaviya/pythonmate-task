@@ -57,7 +57,7 @@ class UserLoginView(GenericAPIView):
 class ShiftAdd(CreateAPIView):
     serializer_class = ShiftSerializer
     model = Shift
-    # permission_classes=[IsAuthenticated]
+    permission_classes=[IsAuthenticated]
     
 
     def create(self, request, *args, **kwargs):
